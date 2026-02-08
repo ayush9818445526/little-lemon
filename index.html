@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #F4CE14 0%, #E23E57 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #F4CE14;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        .section h2 {
+            color: #E23E57;
+            margin-bottom: 1rem;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .menu-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .menu-item h3 {
+            color: #F4CE14;
+            margin-bottom: 0.5rem;
+        }
+        
+        .menu-item p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            color: #E23E57;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .api-links {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .api-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: #E23E57;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .api-links a:hover {
+            background: #F4CE14;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍋 Little Lemon</h1>
+        <p>Your Favorite Mediterranean Restaurant</p>
+    </header>
+    
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#api">API Documentation</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="menu" class="section">
+            <h2>Our Menu</h2>
+            <p>Discover our delicious Mediterranean cuisine</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Greek Salad</h3>
+                    <p>Fresh tomatoes, cucumbers, feta cheese, and olives with olive oil dressing</p>
+                    <div class="price">$12.99</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Bruschettas</h3>
+                    <p>Toasted bread with tomato, garlic, and basil</p>
+                    <div class="price">$8.99</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Grilled Fish</h3>
+                    <p>Fresh sea fish grilled with lemon and herbs</p>
+                    <div class="price">$18.99</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="api" class="section">
+            <h2>API Documentation</h2>
+            <p>Access our API endpoints for restaurant data and bookings</p>
+            <div class="api-links">
+                <a href="/api/menu/">Menu Items API</a>
+                <a href="/api/bookings/">Bookings API</a>
+                <a href="/api/">API Root</a>
+                <a href="/api/auth/login/">Login</a>
+                <a href="/admin/">Admin Panel</a>
+            </div>
+        </section>
+        
+        <section id="booking" class="section">
+            <h2>Make a Reservation</h2>
+            <p>Book a table at Little Lemon today!</p>
+            <p>Use our <a href="/api/bookings/">API</a> to make a reservation or visit us in person.</p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 123 Mediterranean Street, Food City</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@littlelemon.com</p>
+            <p><strong>Hours:</strong> Monday - Sunday, 11am - 11pm</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Little Lemon Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
